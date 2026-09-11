@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Management System</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Student Management System</h1>
+
+        <!-- Add Student -->
+        <div class="card">
+
+            <h2>Add Student</h2>
+
+            <input type="text" id="name" placeholder="Enter student name">
+
+            <input type="text" id="course" placeholder="Enter course">
+
+            <input type="number" id="marks" placeholder="Enter marks">
+
+            <button onclick="addStudent()">Add Student</button>
+
+        </div>
+
+
+        <!-- Get Student -->
+        <div class="card">
+
+            <h2>View Student</h2>
+
+            <input type="number" id="studentId" placeholder="Enter Student ID">
+
+            <button onclick="getStudent()">View Student</button>
+
+            <button onclick="getAllStudents()">View All Students</button>
+
+        </div>
+
+
+        <!-- Update Student -->
+        <div class="card">
+
+            <h2>Update Student</h2>
+
+            <input type="number" id="updateId" placeholder="Student ID">
+
+            <input type="text" id="updateName" placeholder="New name">
+
+            <input type="text" id="updateCourse" placeholder="New course">
+
+            <input type="number" id="updateMarks" placeholder="New marks">
+
+            <button onclick="updateStudent()">Update Student</button>
+
+        </div>
+
+
+        <!-- Delete Student -->
+        <div class="card">
+
+            <h2>Delete Student</h2>
+
+            <input type="number" id="deleteId" placeholder="Student ID">
+
+            <button onclick="deleteStudent()">Delete Student</button>
+
+        </div>
+
+
+        <!-- Result -->
+        <div class="card">
+
+            <h2>Result</h2>
+
+            <pre id="result">Results will appear here...</pre>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
